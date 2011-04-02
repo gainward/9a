@@ -1,0 +1,14 @@
+application: 9a
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /s/.*
+  script: service.py
+
+- url: /static/css
+  static_dir: webclient/static/css
+
+- url: .*
+  script: webclient/main.py

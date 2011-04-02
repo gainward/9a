@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Interface</h1>
+<p>Add Gym:</p>
+<form action="/addgym" method=post>
+  Gym Name: <input name="name" type="text" size="50" /><br>
+  <input type="submit" value="Add Gym" />
+</form>
+<br>
+<p>Add Route:</p>
+<form action="/addroute" method=post>
+  Gym: <select name="gym">
+    {% for gym in gyms %}
+      <option value="{{ gym.gym_id }}">{{ gym.name|escape }}</option>
+    {% endfor %}
+  </select>
+  Route author: <input name="author" type="text" size="50" /><br>
+  Route name: <input name="name" type="text" size="50" /><br>
+  Problem/Route?: <input name="type" type="radio" value="problem" /><input  name="type" type="radio" value="route" /><br>
+  Grade: <input name="grade" type="text" size="10" /><br>
+  Description: <input name="description" type="text" size="500" />
+  <input type="submit" value="Submit" />
+</form>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Create a new gym:</p>
+<form action=/addgym method=post>
+  Gym Name: <input name=name type=text size=50><br>
+  <input type=submit value="Add Gym" />
+</form>
+{% endblock %}

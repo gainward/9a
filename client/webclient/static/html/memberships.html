@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Memberships:</p>
+<table>
+  <tr>
+    <th>Gym</th>
+    <th>Is Owner?</th>
+  </tr>
+  {% for membership in memberships %}
+    <tr>
+      <td>{{ membership.gym.name|escape }}</td>
+      <td>{{ membership.owner|escape }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}

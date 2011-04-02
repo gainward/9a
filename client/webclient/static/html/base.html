@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head lang=en>
+    <meta charset=UTF-8>
+    <title>9a</title>
+    <link rel=stylesheet href=/static/css/main.css />
+    <!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+  </head>
+  <body>
+    <div id=login>
+      {% if user %}
+        {{ user.nickname }} ! [<a href={{ logout }}><b>sign out</b></a>]
+      {% else %}
+        [<a href={{ login }}><b>sign in</b></a>]
+      {% endif %}
+    </div>
+    <header>
+      <hgroup>
+        <h1>9a</h1>
+        <h2>a place to note your climbing stuff</h2>
+      </hgroup>
+      <nav id=globalNav>
+        <ul>
+          <li><a href=/>Feed</a></li>
+          <li><a href=/gyms id=gyms>Gyms</a>
+            <ul class=subMenu>
+              <li><a href=/memberships>Memberships</a></li>
+              <li><a href=/addgym>Create Gym</a></li>
+            </ul>
+          </li>
+          <li><a href=# id=routes>Routes</a>
+            <ul class=subMenu>
+              <li><a href=#>My Routes</a></li>
+              <li><a href=#>Create Route</a></li>
+            </ul>
+          </li>
+          <li><a href=#>Friends</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id=content>
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<header class=content-header>
+  <hgroup class=header-title>
+    <h6>Feed</h6>
+  </hgroup>
+  <nav class=content-nav>
+    <ul>
+      <li>Friends</li>
+      <li>Gyms</li>
+    </ul>
+  </nav>
+</header>
+<ol>
+  {% for send in sends %}
+    <li> {{ send.user|escape }} </li>
+  {% endfor %}
+</ol>
+{% endblock %}

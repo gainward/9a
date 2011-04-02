@@ -1,0 +1,124 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+  width: 960px;
+  color: #bdd;
+  background: #255;
+  padding: 0 5em;
+  margin: 0 auto;
+}
+
+/*h1 {
+  padding: 2em 1em;
+  background: #577
+}
+
+h2 {
+  color: #add;
+  border-top: 1px dotted #fff;
+  margin-top: 2em
+}
+*/
+
+header {
+  display: inline;
+}
+
+hgroup h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+hgroup h2 {
+  font-size: 12px;
+}
+
+a {
+  color: #9ff
+}
+
+p {
+  margin: 1em 0
+}
+
+#login {
+  font-size: 12px;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#globalNav {
+  font-size: 12px;
+  float: left;
+  display: inline;
+}
+
+#globalNav a {
+  display: block;
+  width: 100px;
+}
+
+ul.subMenu {
+  margin-left: 10px;
+}
+
+#content {
+  display: inline;
+/*  float: left; */
+  margin-left: 30px;
+/*  width: 100%; */
+}
+
+header.content-header {
+  margin-top: 0;
+/*  display: table; */
+}
+
+hgroup.header-title {
+  display: inline;
+}
+
+hgroup.header-title h6 {
+  display: inline;
+  float: left;
+  font-size: 14px;
+  margin: 0;
+}
+
+nav.content-nav {
+  display: inline;
+  list-style: none;
+}
+
+nav.content-nav ul {
+  display: inline;
+}
+
+nav.content-nav ul li {
+  display: inline;
+  float: right;
+}
+
+/*
+nav#globalNav ul li .subMenu {
+  height: 0;
+}
+
+nav#globalNav ul li .subMenu li a {
+  height: 0;
+  line-height: 0;
+}
+
+#gyms:hover > .subMenu {
+  height: 30px;
+}
+
+#gyms:hover > .subMenu li a {
+  height: 15px;
+  line-height: 15px;
+}
+*/

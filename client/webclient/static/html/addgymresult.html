@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+{% if not error %}
+  <p>Gym {{ gym_name }} created.</p>
+{% else %}
+  <p>Error: {{ error }}</p>
+{% endif %}
+{% endblock %}
